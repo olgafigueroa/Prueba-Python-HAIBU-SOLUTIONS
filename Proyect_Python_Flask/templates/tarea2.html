@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+{% block body %}
+
+<div class="card card-body">
+<form action="/" method="POST">
+  <h1>Matriz</h1>
+  <text>R</text>
+  <input type="text" name="R" placeholder="">
+  <text>C</text>
+  <input type="text" name="C" placeholder="">
+  <text>Z</text>
+  <input type="text" name="Z" placeholder="">
+  <text>X</text>
+  <input type="text" name="X" placeholder="">
+  <text>Y</text>
+  <input type="text" name="Y" placeholder="">
+  <button type="submit">
+    Calcular
+</button>
+<button type="reset">
+    Limpiar
+</button>
+</form>
+</div>
+<div class="col-md-7">
+<table class="table table-striped table-hover table-bordered table-sm bg-white">
+  <thead>
+    <tr>
+      <td>Calculo de Matriz</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>{{Calculo}}</td>
+      </tr>
+  </tbody>
+</table>
+</div>
+</div>
+</div>
+{% endblock %}

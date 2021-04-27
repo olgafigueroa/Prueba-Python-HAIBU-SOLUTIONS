@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+{% block body %}
+
+
+<div class="card card-body">
+<form action="/" method="POST">
+  <h1>Busqueda de Patente</h1>
+  <text>ID de Patente</text>
+  <input type="text" name="id_patente" placeholder="">
+  <button type="submit">
+    Buscar
+</button>
+<button type="reset">
+  Limpiar
+</button>
+
+</form>
+</div>
+
+<div class="col-md-7">
+<table class="table table-striped table-hover table-bordered table-sm bg-white">
+  <thead>
+    <tr>
+      <td>ID Patente</td>
+      <td>Numero Patente</td>
+    </tr>
+  </thead>
+  <tbody>
+   
+    <tr>
+      <td>{{id_patente}}</td>
+      <td>{{numero_patente}}</td>
+      </tr>
+ 
+  </tbody>
+</table>
+</div>
+</div>
+</div>
+
+{% endblock %}
